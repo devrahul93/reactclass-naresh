@@ -1,0 +1,356 @@
+https://code.visualstudio.com/download > Install
+https://nodejs.org/en/ > Install
+https://github.com/Aakashdeveloper > Create Account
+https://git-scm.com/downloads > Install
+
+//// extensions
+> TabNine
+> GitLens
+> git history
+> eslint
+> vscode-icons
+
+html
+css
+bootstrap 3,4,5
+
+
+Npm
+React = 3
+Mock API
+json-server
+Github
+Deployment
+-> MERN
+-> heroku
+-> Aws
+-> Docker
+-> Nginx
+React-JWT(Login Logout)-2
+
+React_hooks -1
+React-GraphQL-1
+HOC
+Basic React Native=1
+React-Redux =1
+React-Redux =1
+///////Walkthrough///////
+React-Saga -1
+React-with-typescript-1
+Testing Jest Enzime
+--------NOT Backend--------------
+API
+GraphQL
+Login/Logout
+
+React
+> React is a frontend frame/library which 
+help to build single page application
+using component base structure
+
+open source
+
+npm
+> node package manager
+
+json
+> javascript object notation
+[
+    {
+        "name":"John",
+        "city":"London"
+    },
+    {
+        "name":"Ankit",
+        "city":"Venice"
+    }
+]
+
+================================
+package.json
+> entry point to the application
+> meta data(version, description, author)
+> script (start, test, build)
+> packages we need for app
+
+/////////
+Step to generate package.json
+/////////
+*NodeJs must be installed in system
+> navigate inside folder using cmd/terminal
+> npm init
+> answer all questions
+> type "yes"
+
+/////////
+Step to install package
+/////////
+> navigate inside folder using cmd/terminal
+> npm i packagename
+
+/////////
+Step to generate react app
+////////////////////////////////
+> navigate inside folder using cmd/terminal
+> npx create-react-app appname
+
+> go inside app using cmd/terminal
+> npm start
+> localhost:3000
+
+
+"react": > this is the main lib
+"react-dom": > this help to render the content
+"react-scripts": > this help to run the app
+
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+3
+
+//es6
+
+const add = (a,b) => {
+    return a+b
+}
+
+
+--------------
+function add(a,b){
+    return b,a
+}
+
+add(1,2)
+2
+
+
+function add(a,b){
+    var out = a,b
+    return out
+}
+add(1,2)
+[1,2]
+
+
+html> structure
+css> design
+bootstrap> responsive
+
+
+/////////
+inline > start in same line
+> span , a, img
+block > start from new line
+> p, div
+
+////////
+inline
+styleTag 
+stylesheet
+
+inline>styleTag>stylesheet
+
+inline
+{
+    color:Red,
+    text-align:center,
+}
+
+styleTag
+{
+    color:orange,
+    font-size:30px
+}
+
+stylesheet
+{
+    color:green,
+    text-align:right,
+    font-size:40px,
+    border: 2px solid
+}
+
+
+{
+   color:Red,
+   text-align:center, 
+   font-size:30px,
+   border: 2px solid
+}
+
+
+///////
+tagName
+> h1 p span
+className
+> when we have target multiple element
+> .
+Id
+> When we have to target unique element
+> #
+
+Bootstrap3
+
+xs < 768px
+sm > 768px
+md > 992px
+lg > 1200px
+
+Bootstrap5
+col- <576px
+sm > 576px;
+md > 768px;
+lg > 992px;
+xl > 1200px
+xxl > 1400px
+
+///////component////////////////////////////////
+ClassComponent
+> Logical Component
+> we can maintain the state
+> we can use for api calling, logics as well as display
+
+FunctionalComponent
+> Dumb Component
+> they are mainly use for display purpose
+> we cannot maintain the state
+
+HooksComponent
+
+/////////////
+state
+> state act like a local variable
+> scope of the state is with one component
+> any data interaction will happen through state
+> whenever state update component will re-render
+> we can update the value of state (mutable)
+
+props
+> props help to transfer data from one component to another
+> we cannot update value of props (immutable)
+> we can send data between nested components only
+
+/////javascript////
+map
+filter
+indexof
+
+var a = ["delhi","mumbai","bangolare", "pune]
+a.map((data) => {console.log(data)})
+
+a.map((data) => {return `<p>${data}</p>`})
+
+
+parent => child (props)
+child  => parent (props with function)
+
+function add(a,b){   . >>>>parent
+    return a+b
+}
+
+add(1,2) >>>> we call the function and pass the data
+
+/////////
+filter
+var a = [4,5,3,6,1,8,9,0,3]
+a.filter((data) => { return data>5})
+[6, 8, 9]
+
+indexof
+
+var city = ["Delhi","London","Amsterdam","Pune"]
+city.indexOf('London')
+1
+city.indexOf('Delhi')
+0
+city.indexOf('Helsinki')
+-1
+
+npm i react-router-dom@5.3.0
+
+params(/)
+> complousry to define
+> we for single value
+
+query(?)
+> no need to define
+> use for multiple value
+
+default props
+> history > redirect
+> location > for query params
+> match > params
+
+a.split('&')[1]
+'name=test'
+a.split('&')[1].split('=')
+(2) ['name', 'test']
+a.split('&')[1].split('=')[1]
+'test'
+
+
+(get) restaurants>         https://zomatoajulypi.herokuapp.com/restaurants
+(get) restwrtcity >        https://zomatoajulypi.herokuapp.com/restaurant?stateId=1
+(get) hoteldetails >       http://zomatoajulypi.herokuapp.com/details/1
+(get) quickSearch>         https://zomatoajulypi.herokuapp.com/quicksearch
+(get) onbasisofMeal >      https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id=
+
+(get) cuisinefilter >      https://zomatoajulypi.herokuapp.com/filter/4?cuisine=1
+
+(get) costfilter >         https://zomatoajulypi.herokuapp.com/filter/1?hcost=1000&lcost=500
+
+(get) cityname >           https://zomatoajulypi.herokuapp.com/location
+(get) menu >               https://zomatoajulypi.herokuapp.com/menu/1
+
+(post) orderspage >        http://zomatoajulypi.herokuapp.com/menuItem
+                           body [1,4,5]
+(get) allorder>            
+(post)placeOrder >         
+
+https://developerpayment.herokuapp.com/paynow
+
+///////
+Json-Server
+npx json-server --watch orders.json --port 6910
+
+var a= "status=TXN_SUCCESS&ORDERID=TEST_13696&date=2021-12-13%2019:14:38.0&bank=Axis%20Bank"
+undefined
+a.split('&')
+(4) ['status=TXN_SUCCESS', 'ORDERID=TEST_13696', 'date=2021-12-13%2019:14:38.0', 'bank=Axis%20Bank']
+a.split('&')[0]
+'status=TXN_SUCCESS'
+a.split('&')[0].split('=')
+(2) ['status', 'TXN_SUCCESS']
+a.split('&')[0].split('=')[1]
+'TXN_SUCCESS'
+a.split('&')[1].split('=')[1]
+'TEST_13696'
+a.split('&')[1].split('=')[1].split('_')
+(2) ['TEST', '13696']
+a.split('&')[1].split('=')[1].split('_')[1]
+'13696'
+
+/////////////
+/******GetAllUser*****/
+(GET)> https://developerjwt.herokuapp.com/api/auth/users
+
+/******Register*****/
+(POST)> https://developerjwt.herokuapp.com/api/auth/register
+(body) => {"name":"Aakash", "email":"aa@gmail.com","password":"12345678","phone":343432,role?":"user"}
+
+
+/******Login*****/
+(POST) => https://developerjwt.herokuapp.com/api/auth/login
+(body)  => {"email":"aa@gmail.com","password":"12345678"}
+(response)=> {auth:true,token:'dgsdg'}
+
+/******UserInfo*****/
+(GET) => https://developerjwt.herokuapp.com/api/auth/userinfo
+(Header) => {'x-access-token':'token value from login'}
+
+
+https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
